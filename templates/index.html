@@ -18,7 +18,8 @@
 <body class="container">
 <center><h1> Text Analayzer Application</h1></center>
 <br>
-<form action='/filteredText'>
+<form action='/filteredText' method='post'>
+{% csrf_token %}   
 <div class="form-group">
 <textarea name='text' class="form-control"  rows="5" style="padding:20px"></textarea>
 </div>
