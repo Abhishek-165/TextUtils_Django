@@ -9,12 +9,12 @@ def index(request):    #default argument
 
 
 def filteredText(request):
-    textData = request.GET.get('text','default')
-    checkPunctuation = request.GET.get('punctuation','off')
-    checkFullCaps = request.GET.get('fullcaps','off')
-    checkRemoveNewLine = request.GET.get('newline','off')
-    checkextraSpace = request.GET.get('extraSpace','off')
-    checkCharCount =  request.GET.get('charCount','off')
+    textData = request.POST.get('text','default')
+    checkPunctuation = request.POST.get('punctuation','off')
+    checkFullCaps = request.POST.get('fullcaps','off')
+    checkRemoveNewLine = request.POST.get('newline','off')
+    checkextraSpace = request.POST.get('extraSpace','off')
+    checkCharCount =  request.POST.get('charCount','off')
 
 
     params={}
