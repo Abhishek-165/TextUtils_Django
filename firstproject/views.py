@@ -37,7 +37,7 @@ def filteredText(request):
         
     if checkRemoveNewLine == 'on':
         for char in textData:
-            if char!='\n':
+            if char!='\n' and char!="\r":
                 textWithoutLine =textWithoutLine+char
         params.update({'removeNewLine':textWithoutLine})
     if checkextraSpace == 'on':
